@@ -1,0 +1,30 @@
+#!/usr/bin/env php
+
+<?php
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use DCSG\Command\HelloWorldCommand;
+use DCSG\Command\ProgressHelperCommand;
+use DCSG\Command\TableHelperCommand;
+use DCSG\Command\AskAndValidateCommand;
+use DCSG\Command\CallingCommandInsideCommand;
+use DCSG\Command\FormatterHelperCommand;
+use DCSG\Command\CatchSignalsCommand;
+use DCSG\Command\DumpDatabaseCommand;
+use DCSG\Command\SelectDialogCommand;
+use DCSG\Command\RunCommand;
+use Symfony\Component\Console\Application;
+
+$app = new Application('My Console App', '0.0.1');
+$app->add(new HelloWorldCommand());
+$app->add(new TableHelperCommand());
+$app->add(new ProgressHelperCommand());
+$app->add(new AskAndValidateCommand());
+$app->add(new CallingCommandInsideCommand());
+$app->add(new FormatterHelperCommand());
+$app->add(new CatchSignalsCommand());
+$app->add(new DumpDatabaseCommand());
+$app->add(new SelectDialogCommand());
+$app->add(new RunCommand());
+$app->run();

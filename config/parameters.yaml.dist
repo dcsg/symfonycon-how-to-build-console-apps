@@ -1,0 +1,14 @@
+parameters:
+    database.name: 'YOUR DATABASE NAME'
+    database.host: 'HOST'
+    database.user: 'USERNAME'
+    database.password: 'PASSWORD'
+
+    backup.databases:
+        - dbA
+        - dbB
+
+    logger.class: 'Monolog\Logger'
+    logger.name: 'logger'
+    logger.handler.class: 'Monolog\Handler\StreamHandler'
+    logger.log_path: '/tmp/'
