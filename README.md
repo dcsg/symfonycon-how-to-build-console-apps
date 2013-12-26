@@ -1,6 +1,6 @@
 # How to build Console applications
 
-Source code of my talk at [SymfonyCon 2013](warsaw2013.symfony.com) about **How to build Console applications**
+Source code of my talk at [SymfonyCon 2013](http://warsaw2013.symfony.com/) about **How to build Console applications**
 
 ## Installation
 
